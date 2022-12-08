@@ -4,14 +4,16 @@ using namespace std;
 
 int main() {
     char a;
-    bool b;
+    bool t;
 cin>>a;
-b= conversione(a);
+
+t= conversione(a);
 if(t== true){
     cout<<a<<endl;
 }
 else{
-    cout<< "errore" <<endl;
+    cout<<"errore"<<endl;
 }
     return 0;
 }
+
