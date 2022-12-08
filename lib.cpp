@@ -1,17 +1,16 @@
 #include "lib.h"
-
-bool conversione(char &a) {
-
-    if ((a >= 0) && (a <= 9)) {
+bool conversione(char &c) {
+    if ((c >= 0) && (c <= 9)) {
         return false;
-    } else
+    }
+    else
     {
-        if(a >= 'A' && a <= 'Z'){
-            a= a + 32;
+        if(c>= 'A' && c <= 'Z'){
+            c= c + 32;
             return true;
         }
-        else if((a >='a')&&(c<='z')){
-            a = a-32;
+        else if((c>='a')&&(c<='z')){
+            c=c-32;
             return true;
         }
     } 
